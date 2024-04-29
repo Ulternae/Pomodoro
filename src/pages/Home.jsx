@@ -17,8 +17,10 @@ const Home = () => {
       <div
         className={`md:p-12 gap-8 items-center py-8 grid justify-center min-h-screen  font-${font}`}
       >
+        <div className="grid gap-8">
         <img className="mx-auto" src={logo} alt="Pomodoro Title" />
         <TimerOptions />
+        </div>
         <TimerCount />
         <img
           className="mx-auto"
