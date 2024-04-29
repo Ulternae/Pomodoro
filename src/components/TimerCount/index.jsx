@@ -67,7 +67,7 @@ const TimerCount = () => {
           const updatedOffset = prevState + progressRate;
           if (updatedOffset >= dasharray) {
             clearInterval(interval);
-            playAudio("/audio/alarm1.mp3", AUDIO_REFERENCE[color]);
+            playAudio("audio/alarm1.mp3", AUDIO_REFERENCE[color]);
             handleTimerState({ progressBar: false, completeTimer: true });
             return dasharray;
           }
